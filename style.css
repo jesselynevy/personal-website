@@ -1,0 +1,14 @@
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: rgb(99, 99, 99);
+    margin-left: 3px;
+    animation: blink 1s infinite;
+}
