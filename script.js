@@ -29,7 +29,7 @@ function closeMenu(){
 
 window.addEventListener('scroll', ()=>{
     if(scrollY > 50){
-        navBar.classList.add('bg-transparent', 'shadow-sm', 'bg-opacity-50', 'backdrop-blur-lg',
+        navBar.classList.add('bg-transparent', 'shadow-sm', 'bg-opacity-50', 'backdrop-blur-lg', 'border-bottom-[#b820e6]',
             'dark:bg-darkTheme', 'dark:shadow-white/20');
         navLinks.classList.remove('bg-white', 'shadow-sm', 'bg-opacity-50',
             'dark:border', 'dark:border-white/50', 'dark:bg-transparent');
