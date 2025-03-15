@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme 
-dark:text-white relative">
-    <!-- <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
-        <img src="assets/header-bg-color.png" alt="background" class="w-full">
-    </div> -->
+<body class="overflow-x-hidden font-Arapey leading-8 dark:bg-darkTheme 
+dark:text-white relative">  
     <div class="fixed top-0 left-0 w-full h-full bg-gradient-to-b from-[#f1d4ff] to-[#e3faff] -z-10 
-    dark:bg-gradient-to-b dark:from-[#11011f] dark:to-[#52227a]"></div>
-
+    dark:bg-gradient-to-b dark:from-[#11011f] dark:to-[#52227a]">
+    </div>
+    
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex 
     items-center justify-between z-50">
         <img src="./assets/logo-dark.png" alt="logo" 
@@ -31,7 +31,7 @@ dark:text-white relative">
 
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 
         rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50
-        dark:border dark:border-white/50 dark:bg-transparent font-Ovo">
+        dark:border dark:border-white/50 dark:bg-transparent font-Fraunces">
             <li><a href="#top" class="hover:text-[#b820e6] dark:hover:text-[#b820e6] transition">Home</a></li>
             <li><a href="about.html" class="hover:text-[#b820e6] dark:hover:text-[#b820e6] transition">About Me</a></li>
             <li><a href="porto.html" class="hover:text-[#b820e6] dark:hover:text-[#b820e6] transition">Portofolio</a></li>
@@ -45,7 +45,7 @@ dark:text-white relative">
             </button>
            
             <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 
-                border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50">
+                border border-gray-500 rounded-full ml-4 font-Arapey dark:border-white/50">
                 Contact
                 <img src="./assets/arrow-icon.png" alt="arrow" class="w-3 dark:hidden">
                 <img src="./assets/arrow-icon-dark.png" alt="arrow" class="w-3 hidden dark:block">
@@ -58,7 +58,7 @@ dark:text-white relative">
         </div>
         <!-- mobile menu -->
         <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed 
-         -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo
+         -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Arapey
          dark:bg-[#2a004a] dark:text-white">
 
             <div class="absolute right-6 top-6" onclick="closeMenu()">
@@ -76,37 +76,37 @@ dark:text-white relative">
     <!-- header -->
     <div id="top" class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col
     items-center justify-center gap-4">
-        <img src="assets/profile-img.png" alt="profile" class="rounded-full w-64 bg-gray-100 shadow-md">
-        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo writer">
-            <span id="typewriter"></span>
-            <img src="assets/hand-icon.png" alt="hand-icon" class="w-6"></h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">informatics student and webdev enthusiast</h1>
-        <p class="max-w-2xl mx-auto font-Ovo">I am a second-semester student at UMN, passionate about web development
-            and currently building projects to grow my skills🚀</p>
+        <img src="assets/Union.png" alt="Left Image" class="absolute left-7 top-[7%] transform -translate-y-1/2 w-28 sm:w-40 md:w-52 lg:w-64" data-aos="fade-right" data-aos-duration="1000">
+        <img src="assets/react.png" alt="Right Image" class="absolute right-3 top-[35%] transform -translate-y-1/2 w-28 sm:w-40 md:w-52 lg:w-64" data-aos="fade-left" data-aos-duration="1000">
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Arapey writer" data-aos="fade-down" data-aos-duration="1000">
+        <span id="typewriter"></span>
+        <img src="assets/hand-icon.png" alt="hand-icon" class="w-6"></h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px]" data-aos="fade-down" data-aos-duration="1000"><em class="font-bold">jess</em> is an <em class="font-bold">informatics</em> student who <em class="font-bold">fixes errors</em> she created herself</h1>
+        <p class="max-w-2xl mx-auto font-Epilogue" data-aos="fade-down" data-aos-duration="1000">Currently on second-semester at UMN and I'm building game website for midterm exam with my team! I'm open to participate in either
+        tech competitions or interesting projects to grow my skills🚀</p>
 
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
             <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r
-            from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2
-            dark:border-transparent">
+            from-[#b820e6] to-[#202cda] text-white flex items-center gap-2 hover:scale-105 transition-all
+            dark:border-transparent" data-aos="fade-right" data-aos-duration="1000">
                 contact me<img src="assets/right-arrow-white.png" alt="right-arrow" class="w-4"></a>
 
             <a href="assets/JESSELYN VANIA ANGELIE CV.pdf" download
-                class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white
-                dark:text-black">
+                class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white hover:scale-105 transition-all
+                dark:text-black" data-aos="fade-left" data-aos-duration="1000">
                 my resume<img src="assets/download-icon.png" alt="right-arrow" class="w-4"></a>
         </div>
     </div>
 
     <!-- Contact -->
-    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./assets/footer-bg-color.png')] 
-    bg-no-repeat bg-cover bg-center
-    dark:bg-none">
-        <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
-        <h2 class="text-center text-5xl font-Ovo">Get In Touch</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Feel free to reach out! Whether it's a project, collaboration, 
-            or just a chat—I'm always happy to connect🐱</p>
+    <div id="contact" class="w-11/12 min-w-3xl mx-auto px-[12%] py-10 scroll-mt-20 
+    bg-center rounded-lg bg-white/30 dark:bg-darkTheme/25">
+        <h4 class="text-center mb-2 text-lg font-Fraunces font-semibold" data-aos="fade-down" data-aos-duration="1000"><em>Let's be friend</em>🤩</h4>
+        <h2 class="text-center text-5xl font-Fraunces" data-aos="fade-down" data-aos-duration="1000">Get In Touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Epilogue font-semibold" data-aos="flip-down" data-aos-duration="1000"><em>Feel free to reach out! Whether it's a project, collaboration, 
+            or just a chat—I'm always happy to connect</em>🐱</p>
     
-        <form action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto">
+        <form action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
             <input type="hidden" name="access_key" value="22356121-ecc1-40b1-90d5-626c11ef105e">
             <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
                 <input type="text" name="name" placeholder="Enter your name" class="flex-1 p-3
@@ -122,7 +122,7 @@ dark:text-white relative">
 
             <button class="py-3 px-8 w-max flex items-center justify-between gap-2
             bg-black/80 text-white rounded-full mx-auto cursor-pointer hover:bg-black
-            duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkTheme">Submit now
+            duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkTheme">send message
                 <img src="./assets/right-arrow-white.png" alt="right-arrow-white" 
                 class="w-4">
             </button>
@@ -130,7 +130,7 @@ dark:text-white relative">
     </div>
 
     <!-- footer -->
-    <div class="mt-20">
+    <div class="mt-20" data-aos="fade-up" data-aos-duration="1000">
         <div class="text-center">
             <img src="./assets/logo-dark.png" alt="logo-dark" class="w-36 mx-auto mb-2 dark:hidden">
             <img src="./assets/logo-light.png" alt="logo-dark" class="w-36 mx-auto mb-2 hidden dark:block">
@@ -143,7 +143,7 @@ dark:text-white relative">
         </div>
         <div class="text-center sm:flex items-center justify-between border-t border-gray-400
         mx-[10%] mt-12 py-6">
-            <p>© 2025 Jesselyn Vania Angelie. All rights reserved.</p>
+            <p>© 2025 Jesselyn Vania Angelie</p>
             <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
                 <li><a href="https://instagram.com/jesselynvy" target="_blank">
                     <img src="assets/instagram_icon.png" class="w-8">
@@ -159,6 +159,9 @@ dark:text-white relative">
         </div>
     </div>
     <script src="./script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

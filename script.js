@@ -3,7 +3,7 @@ const navBar = document.querySelector("nav");
 const navLinks = document.querySelector("nav ul");
 
 document.addEventListener("DOMContentLoaded", function () {
-    const text = "Hi! I'm Jesselyn Vania Angelie";
+    const text = "Hey there! I'm Jesselyn Vania Angelie";
     const speed = 100; // Typing speed in milliseconds
     let index = 0;
 
@@ -54,5 +54,28 @@ function toggleTheme(){
         localStorage.theme = 'dark';
     }else{
         localStorage.theme = 'light';
+    }
+}
+
+//flip image for about me
+const flip = document.querySelector('.flip');
+
+flip.addEventListener('mousedown', () => {
+    flip.classList.add('clicked');
+});
+
+flip.addEventListener('mouseup', () => {
+    flip.classList.remove('clicked');
+});
+
+flip.addEventListener('mouseleave', () => {
+    flip.classList.remove('clicked');
+});
+
+//get user's name
+function getName(event){
+    if(event.key === "Enter"){
+        let name = document.getElementById("username").value;
+        document.getElementById("greet").innerText = "Hello, " + name + "!";
     }
 }

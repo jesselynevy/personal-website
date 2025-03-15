@@ -5,8 +5,10 @@ tailwind.config = {
                 'auto':'repeat(auto-fit, minmax(200px, 1fr))'
             }, 
             fontFamily:{
-                Outfit:["Outfit", "sans-serif"],
-                Ovo:["Ovo", "serif"]
+                Arapey:["Arapey", "sans-serif"],
+                Fraunces:["Fraunces", "serif"],
+                Ovo:["Ovo", "serif"],
+                Epilogue:["Epilogue", "sans-serif"]
             },
             animation:{
                 spin_slow: 'spin 6s linear infinite'
